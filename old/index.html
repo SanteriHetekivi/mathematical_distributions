@@ -1,0 +1,39 @@
+<!-- Santeri Hetekivi 1202466 13i220B Tampere University of Applied Sciences -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	  <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8" />
+        <title>Tilastomatematiikka</title>
+        <script src='Chart.min.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body align=center>
+		<p>
+			<label for="variance">Variance</label>
+			<input id="variance" value="1"/>
+			<label for="mean">Mean</label>
+			<input id="mean" value="0"/>   
+		</p>
+		<p><h1>Probability density function</h1></p>
+		<canvas id="PDF"></canvas>
+		<p>
+		<label for="PDFmin">Min</label>
+		<input id="PDFmin" value="-5"/>  
+		<label for="PDFmax" >Max</label>
+		<input id="PDFmax" value="5" />  
+		</p>
+		<p><h1>Cumulative distribution function</h1></p>
+		<canvas id="CDF"></canvas>
+		<p>
+			<label for="CDFmin">Min</label>
+			<input id="CDFmin" value="-5"/>  
+			<label for="CDFmax">Max</label>
+			<input id="CDFmax" value="5"/>  
+		</p>
+		
+		<script src='graft.js'></script>
+		<footer>Santeri Hetekivi 1202466 Tampere University of Applied Sciences</footer>
+    </body>
+</html>
